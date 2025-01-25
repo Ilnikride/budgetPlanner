@@ -7,10 +7,11 @@ import org.mockito.Mockito
 
 class SalaryPeriodServiceTest() {
     private val repository = Mockito.mock(Repository::class.java)
-    private val testable = SalaryPeriodService(repository,"")
+    private val testable = SalaryPeriodService(repository)
 
     @Test
     fun schedulerTest(){
         testable.scheduleCreatePeriodFromConfig()
+        println("ended schedulerTest")
     }
 }

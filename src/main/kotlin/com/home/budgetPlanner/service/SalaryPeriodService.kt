@@ -11,9 +11,7 @@ import java.util.*
  * */
 @Service
 class SalaryPeriodService(
-    private val repository: Repository,
-    @Value("\${commingDates}")
-    val commingDates: List<String>
+    private val repository: Repository
 ) {
 
 
@@ -27,7 +25,6 @@ class SalaryPeriodService(
      *
      * */
     fun scheduleCreatePeriodFromConfig() {
-        println(commingDates)
     }
 
     fun getAllPeriods() {

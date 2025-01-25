@@ -1,6 +1,8 @@
 spring:
   application:
     name: "budgetPlanner"
+server:
+  port: 8081
 
 commingDates:
   - "2024-11-10"
